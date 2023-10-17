@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single E-commerce Product Page using HTML, CSS - Codingscape</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!---Boxicons CDN Setup for icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="single-product">
+            <div class="row">
+                <div class="col-6">
+                    <div class="product-image">
+                        <div class="product-image-main">
+                            <img src="/iphone-1.png" alt="" id="product-main-image">
+                        </div>
+                        <div class="product-image-slider">
+                            <img src="/iphone-1.png" alt=""  class="image-list">
+                            <img src="/iphone-2.png" alt=""  class="image-list">
+                            <img src="/iphone-3.png" alt=""  class="image-list">
+                            <img src="/iphone-group.png" alt=""  class="image-list">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="breadcrumb">
+                        <span><a href="#">Home</a></span>
+                        <span><a href="#">Product</a></span>
+                        <span class="active">iphone14</span>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-title">
+                            <h2>iphone-14pro</h2>
+                        </div>
+                        <div class="product-rating">
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span class="review">(47 Review)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="offer-price">$159.00</span>
+                            <span class="sale-price">$199.00</span>
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Description:</h3>
+                            <p>The iPhone 14 Pro and Pro Max feature a Super Retina XDR OLED display with a typical maximum brightness of 1,000 nits.
+                                However, it can go all the way up to 1,600 nits while watching HDR videos, and 2,000 nits outdoors. 
+                                The display has a refresh rate of 120 Hz and uses LTPO technology.</p>
+                        </div>
+                        <div class="product-size">
+                            <h4>Size:</h4>
+                            <div class="size-layout">
+                                <input type="radio" name="size" value="256 GB" id="1" class="size-input">
+                                <label for="1" class="size">256 GB</label>
+
+                                <input type="radio" name="size" value="128 GB" id="2" class="size-input">
+                                <label for="2" class="size">128 GB</label>
+
+                                <input type="radio" name="size" value="512 GB" id="3" class="size-input">
+                                <label for="3" class="size">512 GB</label>
+
+                            </div>
+                        </div>
+                        <div class="product-color">
+                            <h4>Color:</h4>
+                            <div class="color-layout">
+                                <input type="radio" name="color"  value="gold" class="color-input">
+                                <label for="gold" class="gold">gold</label>
+                                <input type="radio" name="color"  value="silver" class="color-input">
+                                <label for="silver" class="silver">silver</label>
+
+                            </div>
+                        </div>
+                        <span class="divider"></span>
+
+                        <div class="product-btn-group">
+                            <div class="button buy-now"><i class='bx bxs-zap' ></i> Buy Now</div>
+                            <div class="button add-cart"><i class='bx bxs-cart' ></i> Add to Cart</div>
+                            <div class="button heart"><i class='bx bxs-heart' ></i> Add to Wishlist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--script-->
+    <script src="script.js"></script>
+</body>
+</html>

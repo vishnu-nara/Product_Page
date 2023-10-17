@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single E-commerce Product Page using HTML, CSS - Codingscape</title>
+
+    <link rel="stylesheet" href="./ecommerce-product-page_files/style.css">
+    <link href="./ecommerce-product-page_files/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="single-product">
+            <div class="row">
+                <div class="col-6">
+                    <div class="product-image">
+                        <div class="product-image-main">
+                            <img src="./ecommerce-product-page_files/iphone-1.png" alt="" id="product-main-image">
+                        </div>
+                        <div class="product-image-slider">
+                            <img src="./ecommerce-product-page_files/iphone-1.png" alt="" class="image-list">
+                            <img src="./ecommerce-product-page_files/iphone-2.png" alt="" class="image-list">
+                            <img src="./ecommerce-product-page_files/iphone-3.png" alt="" class="image-list">
+                            <img src="./ecommerce-product-page_files/iphone-group.png" alt="" class="image-list">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="breadcrumb">
+                        <span><a href="http://127.0.0.1:5500/home.html#">Home</a></span>
+                        <span><a href="http://127.0.0.1:5500/home.html#">Product</a></span>
+                        <span class="active">Iphone</span>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-title">
+                            <h2>Iphone-14 plus</h2>
+                        </div>
+                        <div class="product-rating">
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span class="review">(47 Review)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="offer-price">$999.00</span>
+                            <span class="sale-price">$1200.00</span>
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Description:</h3>
+                            <p>The iPhone 14 and iPhone 14 Plus feature a 6.1-inch (15 cm) and 6.7-inch (17 cm) display, improvements to the rear-facing camera, and satellite connectivity for contacting emergency services when a user in trouble is beyond the range of Wi-Fi or cellular networks.</p>
+                        </div>
+                        <div class="product-size">
+                            <h4>Size:</h4>
+                            <div class="size-layout">
+                                <input type="radio" name="size" value="256 GB" id="1" class="size-input">
+                                <label for="1" class="size">256 GB</label>
+
+                                <input type="radio" name="size" value="128 GB" id="2" class="size-input">
+                                <label for="2" class="size">128 GB</label>
+
+                            </div>
+                        </div>
+                        <div class="product-color">
+                            <h4>Color:</h4>
+                            <div class="color-layout">
+                                <input type="radio" name="color" value="gold" class="color-input">
+                                <label for="gold" class="gold">GOLD</label>
+                                <input type="radio" name="color" value="silver" class="color-input">
+                                <label for="silver" class="silver">SILVER</label>
+
+                            </div>
+                        </div>
+                        <span class="divider"></span>
+
+                        <div class="product-btn-group">
+                            <div class="button buy-now"><i class="bx bxs-zap"></i> Buy Now</div>
+                            <div class="button add-cart"><i class="bx bxs-cart"></i> Add to Cart</div>
+                            <div class="button view-cart"><i class="bx bxs-cart"></i>View Cart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <script src="./ecommerce-product-page_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</div></body></html>
